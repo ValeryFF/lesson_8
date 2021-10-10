@@ -1,0 +1,773 @@
+@import url('fonts.css');
+@import url('reset.css');
+
+/*== color =================================================*/
+.color-red {
+	color: red;
+}
+/*== -color- =========================================================*/
+
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.title {
+	font-size: 40px;
+	margin-bottom: 10px;
+}
+
+.subtitle {
+	font-size: 25px;
+	margin-bottom: 15px;
+}
+
+.text {
+	font-size: 20px;
+	line-height: 150%;
+	margin-bottom: 15px;
+}
+
+/* .block {
+	margin-bottom: 40px;
+} */
+
+/*== link ================================================*/
+.hover {
+	margin-bottom: 100px;
+}
+
+.link,
+.link-2,
+.link-3,
+.link-4 {
+	font-size: 30px;
+	color:green;
+	margin-right: 40px;
+}
+
+.link:hover {
+	border-top: 1px solid #000;
+	color:rgb(47, 1, 107);
+}
+
+.link-2:hover {
+	border-top: 1px solid #000;
+	border-right: 1px solid #000;
+	color: tomato;
+}
+
+.link-3:hover {
+	border-right: 1px solid #000;
+	border-bottom: 1px solid #000;
+	color:rgb(110, 8, 114);
+}
+
+.link-4:hover {
+	border-bottom: 1px solid #000;
+	border-left: 1px solid #000;
+	color:#2C8182;
+	
+}
+/*== -link- ================================================*/
+
+/*== opasity ===============================================*/
+.visited {
+	margin-bottom: 100px;
+}
+
+.opasity {
+	margin-bottom: 100px;
+}
+
+.block-2__title {
+	font-size: 20px;
+	line-height: 150%;
+}
+
+.block-2 {
+	background-color: #876972;
+	margin-bottom: 40px;
+}
+
+.block-2:hover .links-2 {
+	opacity: 1;
+	visibility: visible;
+}
+
+.links-2 {
+	font-size: 28px;
+	line-height: 56px;
+	padding: 20px;
+	color:yellow;
+	opacity: 0;
+	visibility: hidden;
+}
+/*== -opasity- ===============================================*/
+
+/*== visited =================================================*/
+.visited {
+	margin-bottom: 100px;
+}
+
+.block-3__title {
+	font-size: 20px;
+	line-height: 150%;
+	margin-bottom: 15px;
+}
+
+.links-3 {
+	font-size: 30px;
+	color:green;
+}
+
+.links-3:visited {
+	color:rgb(246, 214, 153);
+}
+/*== -visited- =================================================*/
+
+/*== active =================================================*/
+.active {
+	margin-bottom: 100px;
+}
+.block-4__title {
+	font-size: 20px;
+	line-height: 150%;
+	margin-bottom: 15px;
+}
+
+.block-4 {
+	margin-bottom: 40px;
+}
+
+.links-4 {
+	font-size: 30px;
+	color:green;
+}
+
+.links-4:active {
+	color: #000;
+}
+
+.button {
+	background-color: tomato;
+	border-radius: 20px;
+	box-shadow: 0px 8px 0px rgb(189, 51, 26);
+	font-size: 30px;
+	color:green;
+	padding: 20px 30px;
+}
+
+.button:hover {
+	background-color: rgb(218, 71, 45);
+	box-shadow: 0px 8px 0px rgb(173, 97, 84);
+}
+
+.button:active {
+	margin: 4px 0px 0px 0px;
+	box-shadow: 0px 4px 0px rgb(55, 73, 18);
+}
+/*== -active- =================================================*/
+
+/*== focus ====================================================*/
+.focus {
+	margin-bottom: 100px;
+}
+
+.block-5__title {
+	font-size: 20px;
+	line-height: 150%;
+	margin-bottom: 15px;
+}
+
+.links-5 {
+	font-size: 30px;
+	color:green;
+}
+
+.links-5:focus {
+	outline: 1px solid #000;
+	padding: 10px;
+	background-color: rgb(208, 216, 216);
+}
+/*== -focus- ====================================================*/
+
+/*== target =====================================================*/
+.target {
+	margin-bottom: 100px;
+}
+
+.block-6__title {
+	font-size: 20px;
+	line-height: 150%;
+	margin-bottom: 15px;
+}
+
+.links-6 {
+	font-size: 30px;
+	color:green;
+}
+
+.window {
+	max-width: 600px;
+	background-color: rgb(191, 121, 94);
+	color: #fff;
+	font-size: 20px;
+	line-height: 150%;
+	display: none;
+	padding: 20px;
+}
+
+.window:target {
+	display: block;
+}
+/*== -target- =====================================================*/
+
+
+/*=== Псевдоклассы положения в коде ==========================================*/
+/*== first-child ==================================*/
+/*
+  Обращение к первому элементу в коде
+*/
+.text-text {
+	font-size: 20px;
+	line-height: 150%;
+	margin-bottom: 50px;
+}
+
+.text-text p {
+	margin: 0px 0px 20px 0px;
+}
+
+.text-text p:first-child {
+	color: #aa6c01;
+}
+
+.color-black {
+	font-size: 25px;
+}
+/*== -first-child- ==================================*/
+
+/*== first-of-type ==================================*/
+.text-one {
+	font-size: 20px;
+	line-height: 150%;
+	margin-bottom: 50px;
+}
+
+.text-one p {
+	margin: 0px 0px 20px 0px;
+}
+
+.text-one p:first-of-type {
+	color:rgb(0, 120, 189);
+}
+
+.text-two {
+	margin-bottom: 100px;
+}
+
+.text-two p {
+	font-size: 20px;
+	line-height: 150%;
+	margin: 0px 0px 20px 0px;
+}
+
+.text-two *:first-of-type {
+	color:rgb(128, 3, 121);
+	font-size: 20px;
+	line-height: 150%;
+	margin: 0px 0px 20px 0px;
+}
+/*== -first-of-type- ==================================*/
+
+/*== last-child ==================================*/
+.text-last {
+	margin-bottom: 100px;
+}
+
+.text-last p {
+	font-size: 20px;
+	line-height: 150%;
+	margin: 0px 0px 20px 0px;
+}
+
+.text-last p:last-child {
+	color: darkred;
+	margin-bottom: 0;
+} 
+
+.fzcol {
+	font-size: 23px;
+	color: rgb(255, 4, 4);
+}
+/*== -last-child- ==================================*/
+
+/*== nth-child(2) =================================*/
+.text-nthchild {
+	margin-bottom: 100px;
+}
+
+.text-nthchild p {
+	font-size: 20px;
+	line-height: 150%;
+	margin: 0px 0px 20px 0px;
+}
+
+.text-nthchild p:nth-child(2) {
+	color:  rgb(30, 122, 41);
+}
+/*== -nth-child- =================================*/
+
+/*== nth-child(odd) =================================*/
+.text-nthchild-odd {
+	margin-bottom: 100px;
+}
+
+.text-nthchild-odd p {
+	font-size: 20px;
+	line-height: 150%;
+	margin: 0px 0px 20px 0px;
+}
+.text-nthchild-odd p:nth-child(odd) {
+	color:rgb(144, 14, 14);
+}
+/*== -nth-child(odd)- =================================*/
+
+/*== nth-child(even) =================================*/
+.text-nthchild-even {
+	margin-bottom: 100px;
+}
+
+.text-nthchild-even p {
+	font-size: 20px;
+	line-height: 150%;
+	margin: 0px 0px 20px 0px;
+}
+
+.text-nthchild-even p:nth-child(even) {
+	color:hotpink;
+}
+/*== -nth-child(even)- =================================*/
+
+/*== p:not(:last-child) =================================*/
+.not {
+margin-bottom: 150px;
+}
+
+.not p {
+	font-size: 20px;
+	line-height: 150%;
+	/* margin: 0px 0px 20px 0px; */
+}
+
+.not p:not(:last-child) {
+	margin: 0px 0px 20px 0px;
+}
+/*== -p:not(:last-child)- =================================*/
+
+           
+       /*?===================== ПСЕВДО-ЭЛЕМЕНТЫ ================================================*/
+.pseudoelement__title {
+	margin-bottom: 20px;
+}
+
+.pseudoelement {
+	font-size: 23px;
+	line-height: 150%;
+	margin-bottom: 15px;
+}
+/*== first-line =================================*/
+.firstline__subtitle {
+	margin-bottom: 10px;
+}
+.firstline {
+	font-size: 20px;
+	line-height: 150%;
+	margin-bottom: 100px;
+}
+
+.fz__subtitle {
+	font-size: 24px;
+	color: red;
+}
+
+.firstline__text {
+	margin-bottom: 20px;
+}
+
+.firstline__text::first-line {
+	color: indigo;
+}
+/*== -first-line- =================================*/
+
+/*== first-letter =================================*/
+.firstletter__text {
+	text-indent: 30px;
+	margin-bottom: 20px;
+}
+
+.firstletter__text::first-letter {
+	color:rgb(252, 155, 0);
+	font-size: 35px;
+	font-weight: 600;
+}
+/*== -first-leter- =================================*/
+
+/*==== ::before ===========================================*/
+.before__title {
+	font-size: 40px;
+	font-weight: 900;
+	display: inline-block;
+	margin: 0px 0px 30px 0px;
+}
+
+.before__title::after {
+	content: "";
+	display: block;
+	
+	background-color: #34c759;
+	height: 2px;
+	width: 50%;
+	margin: 15px 0px 0px 0px;
+}
+
+.before__subtitle {
+	font-size: 22px;
+	line-height: 150%;
+	margin-bottom: 20px;
+}
+
+.before__text::before {
+	content: "";
+}
+
+.before__text::after {
+	content: "";
+}
+/*==== -::before- ===========================================*/
+
+/*==== block-list ===================================================*/
+.block__list {
+	display: inline-block;
+	margin: 0px 80px 0px 0px;
+}
+
+.list {
+	font-size: 20px;
+	line-height: 150%;
+}
+
+.list li::before {
+	content: "";
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	background-color: red;
+	border-radius: 50%;
+	vertical-align: top;
+	margin: 9px 10px 0px 0px;
+}
+/*==== -block-list- ===================================================*/
+
+/*==== block-list-2 ===================================================*/
+.block__list2 {
+	display: inline-block;
+	margin: 0px 80px 0px 0px;
+}
+
+.list-2 {
+	font-size: 20px;
+	line-height: 150%;
+}
+
+.list-2 li::before {
+	content: "";
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	background-color: red;
+	border-radius: 50%;
+	vertical-align: top;
+	margin: 9px 10px 0px 0px;
+}
+
+.list-2 li:hover {
+	color: orangered;
+}
+
+.list-2 li:hover::before {
+	background-color: limegreen;
+	border-radius: 0;
+}
+/*==== -block-list-2- ===================================================*/
+
+/*==== block-list-3 ===================================================*/
+.block__list3 {
+	display: inline-block;
+	margin: 0px 80px 0px 0px;
+}
+
+.list-3 {
+	font-size: 20px;
+	line-height: 150%;
+}
+
+.list-3 li::before {
+	content: "";
+	display: inline-block;
+	background: url(../img/email_24px.png) 0 3px / cover no-repeat;
+	width: 20px;
+	height: 20px;
+	margin: 0px 15px 0px 0px;
+	
+}
+/*==== -block-list-3- ===================================================*/
+
+/*==== block-list-4 ===================================================*/
+.block__list4 {
+	display: inline-block;
+	margin: 0px 80px 0px 0px;
+	
+}
+
+.list-4 {
+	font-size: 20px;
+	line-height: 150%;
+}
+
+.list-4 li::before {
+	content: "";
+	display: inline-block;
+	background: url(../img/briefcase.png) 0 3px / cover no-repeat;
+	width: 20px;
+	height: 20px;
+	margin: 0px 15px 0px 0px;
+}
+
+.list-4 li:hover {
+	color: mediumorchid;
+}
+/*==== -block-list-4- ===================================================*/
+
+/*==== num-list ===================================================*/
+.block__num-list {
+	display: inline-block;
+	margin: 0px 0px 100px 0px;
+}
+
+.num-list {
+	counter-reset: item; /* сбросили счётчик */
+	font-size: 20px;
+	line-height: 150%;
+}
+
+.num-list li:not(:last-child) {
+	margin: 0px 0px 0px 0px;
+}
+
+.num-list li::before {
+	counter-increment: item; /* выводит новый счётчик */
+	content: counter(item) ")"; /* нумеруем список */
+	display: inline-block;
+	vertical-align: top;
+	color:rgb(149, 4, 4);
+	margin: 0px 10px 0px 0px;
+}
+
+.num-list li:hover::before {
+	color: #17ac3c;
+}
+
+.num-list li:hover {
+	color: #aa6c01;
+}
+/*==== -num-list- ===================================================*/
+
+        
+       /*?========================== домашка ==========================================*/
+.body__info {
+	font-family: "Roboto", sans-serif;
+	background-color: antiquewhite;
+	margin-bottom: 200px;
+}
+
+.body__info-title {
+	font-family: 'Kurale';
+	font-weight: 600;
+	font-size: 40px;
+	line-height: 150%;
+	margin: 0px 0px 50px 410px;
+}
+
+
+.body__container {
+	max-width: 1050px;
+	margin: 0 auto;
+} 
+
+/*==== header ===================================================*/
+.header {
+	max-width: 583px;
+}
+
+.header__subtile {
+	font-weight: 700;
+	font-size: 12px;
+	line-height: 24px;
+	letter-spacing: 2.5px;
+	text-transform: uppercase;
+	color: #5D62B5;
+}
+/*==== befor =================================*/
+.header__subtile::before {
+	content: "";
+	display: inline-block;
+	background: url(../img/Overline.png) 0 3px / cover no-repeat;
+	width: 17px;
+	height: 16px;
+	margin: 0px 16px 0px 0px;
+}
+
+.header__title {
+	font-weight: 900;
+	font-size: 36px;
+	line-height: 42px;
+	color: #000;
+	padding: 50px 0px 42px 0px;
+}
+
+/*==== item =================================*/
+.content__items {
+	/* display: inline-block; */
+	border: 1px solid #000;
+}
+
+.content__item {
+	display: inline-block;
+	max-width: 324px;
+	margin: 0px 24px 0px 0px;
+}
+
+.content__item::before {
+	content: "";
+	display: inline-block;
+	background: url(../img/dog_love_24x.png) 0 -3px / cover no-repeat;
+	width: 63px;
+	height: 63px;
+	vertical-align: top;
+	margin: 0px 23px 0px 0px;
+}
+
+.content__title {
+	display: inline-block;
+	font-weight: 900;
+	font-size: 19px;
+	line-height: 26px;
+	color: #F2726F;
+	margin: 0px 0px 0px 0px;
+}
+
+.content__text {
+	display: inline-block;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 24px;
+	letter-spacing: 0.15px;
+	color: #4B4B4B;
+	margin: -20px 0px 0px 86px;
+}
+
+/*==== item-2 =======================================*/
+.content__item-2 {
+	display: inline-block;
+	max-width: 324px;
+	margin: 0px 24px 0px 0px;
+}
+
+.content__item-2::before {
+	content: "";
+	display: inline-block;
+	background: url(../img/dog_vet_24x.png) 0 -3px / cover no-repeat;
+	width: 63px;
+	height: 63px;
+	vertical-align: top;
+	margin: 0px 23px 0px 0px;
+}
+
+/*==== item-3 =======================================*/
+.content__item-3 {
+	display: inline-block;
+	max-width: 324px;
+}
+
+.content__item-3::before {
+	content: "";
+	display: inline-block;
+	background: url(../img/dog_stream_24x.png) 0 -3px / cover no-repeat;
+	width: 63px;
+	height: 63px;
+	vertical-align: top;
+	margin: 0px 23px 0px 0px;
+}
+
+/*=================== домашка 2 ================================================*/
+.choose {
+	max-width: 255px;
+	background-color: #252525;
+	border-radius: 15px;
+	margin: 0px auto 100px auto;
+	color: #fff;
+	font-family: 'HelveticaNeueCyr', sans-serif;
+}
+
+.choose__title {
+	font-size: 22px;
+	/* line-height: 26px; */
+	letter-spacing: -0.275px;
+	text-transform: capitalize;
+	padding: 24px 24px 24px 24px;
+}
+
+.choose__title::after {
+	content: "";
+	display: block;
+	background-color: #34C759;
+	width: 27%;
+	height: 2px;
+	font-size: 0;
+	margin: 20px 0px 0px 0px;
+}
+
+.choose__text {
+	font-size: 13px;
+	line-height: 18px;
+	letter-spacing: -0.1625px;
+	color: rgba(255, 255, 255, 0.5);
+	padding: 0px 24px 60px 24px;
+}
+
+.footer {
+	background-color: #aa6c01;
+}
+
+.footer::before {
+	content: "";
+	display: inline-block;
+	background: url(../img/avatar.png) 0 0 /cover no-repeat;
+	width: 63px;
+	height: 63px;
+	margin-right: 100px;
+	margin-left: 200px;
+}
+
+.footer__title {
+	display: inline-block;
+	vertical-align: top;
+	font-size: 30px;
+	margin-top: 15px;
+	color: bisque;
+}
+
+
+

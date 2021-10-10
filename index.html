@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<title>Lesson-8</title>
+</head>
+
+<body>
+	<div class="wrapper">
+		<div class="container">
+			<!-- <header class="header"></header> -->
+			<main class="maim__page">
+				<h1 class="title">Псевдоклассы</h1>
+				<h2 class="subtitle">Псевдоклассы состояния</h2>
+
+				<!--=== Псевдо классы =====================================-->
+				<!--=== hover =====================================-->
+				<div class="hover">
+					<p class="text">1. <span class="color-red">:hover</span> - при наведении на объект, меняется его
+						состояние.</p>
+					<p class="text">При использовании псевдоклассов браузер не перегружает текущий документ, поэтому с
+						помощью псевдоклассов можно получить разные динамические эффекты на странице.</p>
+					<div class="block">
+						<a class="link" href="#">Я ссылка</a>
+						<a class="link-2" href="#">Я ссылка</a>
+						<a class="link-3" href="#">Я ссылка</a>
+						<a class="link-4" href="#">Я ссылка</a>
+					</div>
+				</div>
+
+				<!--=== opasiry =====================================-->
+				<div class="opasity">
+					<p class="block-2__title">Применяем свойсво <span class="color-red">opasity</span>. Псевдоклассом
+						hover, воздействуем на блок.</p>
+					<div class="block-2">
+						<a class="links-2" href="#">Привет!</a>
+					</div>
+				</div>
+
+				<!--=== visited =====================================-->
+				<div class="visited">
+					<p class="block-3__title">Применяем свойсво <span class="color-red">visited</span></p>
+					<p class="block-3__title">Посещённая ссылка, становиться прозрачной.</p>
+					<div class="block-3">
+						<a class="links-3" href="#">Ссылка</a>
+					</div>
+				</div>
+
+				<!--=== active =====================================-->
+				<div class="active">
+					<p class="block-4__title">Применяем свойсво <span class="color-red">active</span></p>
+					<p class="block-4__title">Псевдокласс :active - определяет стиль для активной ссылки. Активной
+						ссылка становится при нажатии на нее.</p>
+					<div class="block-4">
+						<a class="links-4" href="#">Ссылка</a>
+					</div>
+					<a class="button" href="#">кнопка</a>
+				</div>
+
+				<!--=== focus =====================================-->
+				<div class="focus">
+					<p class="block-5__title">Применяем свойсво <span class="color-red">focus</span></p>
+					<p class="block-5__title">Псевдокласс :focus - определяет стиль для элемента получающего фокус.
+						Например, им может быть текстовое поле формы, в которое устанавливается курсор </p>
+					<div class="block-5">
+						<a class="links-5" href="#">Ссылка</a>
+					</div>
+				</div>
+
+				<!--=== target =====================================-->
+				<div class="target">
+					<p class="block-6__title">Применяем свойсво <span class="color-red">target</span></p>
+					<p class="block-6__title">
+						Для перехода к выбранному фрагменту документа, в адресе пишется символ # и указывается имя
+						идентификатора. <br />
+						К примеру, в адресе http://www.w3.org/TR/css3-selectors/#target-pseudo происходит переход к
+						элементу, атрибут id которого задан как target-pseudo. <br />
+						Такая запись адреса называется «целевой элемент».<br />
+						Псевдокласс :target применяется к целевому элементу, иными словами, к идентификатору, который
+						указан в адресной строке браузера.
+					</p>
+					<div class="block-6">
+						<a class="links-6" href="#window">Ссылка</a>
+					</div>
+					<div id="window" class="window">
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora eius quo aliquid amet totam
+						laudantium delectus excepturi sint explicabo quaerat doloremque, quidem, natus obcaecati porro
+						eum voluptatibus consequatur. Corporis, assumenda?
+					</div>
+				</div>
+
+				<!--=== Псевдоклассы положения в коде ========================================-->
+				<!--=== first-child ========================================-->
+				<h2 class="subtitle">Псевдоклассы положения в коде</h2>
+				<h2 class="subtitle"><span class="color-red">first-child</span> обращение к первому элементу внутри
+					родителя.</h2>
+				<div class="text-text">
+					<p>
+						Обратились к первому элементу родителя и поменяли ему цвет. Quaerat, assumenda quod pariatur
+						enim corrupti fugiat reprehenderit hic aut. Ea itaque veniam perspiciatis non, odit libero vel
+						quasi eaque ratione dignissimos?
+					</p>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, assumenda quod pariatur enim
+						corrupti fugiat reprehenderit hic aut. Ea itaque veniam perspiciatis non, odit libero vel quasi
+						eaque ratione dignissimos?
+					</p>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, assumenda quod pariatur enim
+						corrupti fugiat reprehenderit hic aut. Ea itaque veniam perspiciatis non, odit libero vel quasi
+						eaque ratione dignissimos?
+					</p>
+				</div>
+
+				<!--== first-of-type ========================================================================-->
+				<h2 class="subtitle"><span class="color-red">first-of-type</span> обращение к первому параграфу внутри
+					родителя.</h2>
+				<div class="text-one">
+					<p>
+						обратились к первому параграфу внутри родителя. Quaerat, assumenda quod pariatur enim corrupti
+						fugiat reprehenderit hic aut. Ea itaque veniam perspiciatis non, odit libero vel quasi eaque
+						ratione dignissimos?
+					</p>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, assumenda quod pariatur enim
+						corrupti fugiat reprehenderit hic aut. Ea itaque veniam perspiciatis non, odit libero vel quasi
+						eaque ratione dignissimos?
+					</p>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, assumenda quod pariatur enim
+						corrupti fugiat reprehenderit hic aut. Ea itaque veniam perspiciatis non, odit libero vel quasi
+						eaque ratione dignissimos?
+					</p>
+				</div>
+
+				<!--=== *first-of-type =================================================================-->
+				<h2 class="subtitle"><span class="color-red">*first-of-type</span> обращение к любому первому элементу
+					внутри родителя.</h2>
+				<div class="text-two">
+					<p>
+						обратились к любому первому элементу внутри родителя. Quaerat, assumenda quod pariatur enim
+						corrupti fugiat reprehenderit hic aut. Ea itaque veniam perspiciatis non, odit libero vel quasi
+						eaque ratione dignissimos?
+					</p>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, assumenda quod pariatur enim
+						corrupti fugiat reprehenderit hic aut. Ea itaque veniam perspiciatis non, odit libero vel quasi
+						eaque ratione dignissimos?
+					</p>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, assumenda quod pariatur enim
+						corrupti fugiat reprehenderit hic aut. Ea itaque veniam perspiciatis non, odit libero vel quasi
+						eaque ratione dignissimos?
+					</p>
+					<p>
+						Quaerat, assumenda quod pariatur enim corrupti fugiat reprehenderit hic aut. Ea itaque veniam
+						perspiciatis non, odit libero vel quasi eaque ratione dignissimos?
+					</p>
+				</div>
+
+				<!--=== last-child =============================================================================-->
+				<h2 class="subtitle"><span class="color-red">last-child</span> обращение к последнему элементу внутри
+					родителя.</h2>
+				<div class="text-last">
+					<p>
+						Quaerat, assumenda quod pariatur enim corrupti fugiat reprehenderit hic aut. Ea itaque veniam
+						perspiciatis non, odit libero vel quasi eaque ratione dignissimos?
+					</p>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, assumenda quod pariatur enim
+						corrupti fugiat reprehenderit hic aut. Ea itaque veniam perspiciatis non, odit libero vel quasi
+						eaque ratione dignissimos?
+					</p>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, assumenda quod pariatur enim
+						corrupti fugiat reprehenderit hic aut. Ea itaque veniam perspiciatis non, odit libero vel quasi
+						eaque ratione dignissimos?
+					</p>
+					<p>
+						<span class="fzcol">last-child</span> обращение к последнему элементу внутри родителя. Quaerat,
+						assumenda quod pariatur enim corrupti fugiat reprehenderit hic aut. Ea itaque veniam
+						perspiciatis non, odit libero vel quasi eaque ratione dignissimos?
+					</p>
+				</div>
+
+				<!--=== nth-child ===============================================================-->
+				<h2 class="subtitle"><span class="color-red">nth-child</span> порядковый номер элемента.</h2>
+				<div class="text-nthchild">
+					<p>
+						1. Quaerat, assumenda quod pariatur enim corrupti fugiat reprehenderit hic aut. Ea itaque veniam
+						perspiciatis non, odit libero vel quasi eaque ratione dignissimos?
+					</p>
+					<p>
+						<span class="color-red">2. nth-chuld</span> - второй параграф с заданным цветом. Quaerat,
+						assumenda quod pariatur enim corrupti fugiat reprehenderit hic aut. Ea itaque veniam
+						perspiciatis non, odit libero vel quasi eaque ratione dignissimos?
+					</p>
+					<p>
+						3. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, assumenda quod pariatur
+						enim corrupti fugiat reprehenderit hic aut. Ea itaque veniam perspiciatis non, odit libero vel
+						quasi eaque ratione dignissimos?
+					</p>
+					<p>
+						4. Quaerat, assumenda quod pariatur enim corrupti fugiat reprehenderit hic aut. Ea itaque veniam
+						perspiciatis non, odit libero vel quasi eaque ratione dignissimos?
+					</p>
+				</div>
+
+				<!--=== nth-child(odd) ===============================================================-->
+				<h2 class="subtitle"><span class="color-red">nth-child(odd)</span> каждый нечётный элемент родителя.
+				</h2>
+				<div class="text-nthchild-odd">
+					<p>
+						1. Quaerat, assumenda quod pariatur enim corrupti fugiat reprehenderit hic aut. Ea itaque veniam
+						perspiciatis non, odit libero vel quasi eaque ratione dignissimos?
+					</p>
+					<p>
+						2. Quaerat, assumenda quod pariatur enim corrupti fugiat reprehenderit hic aut. Ea itaque veniam
+						perspiciatis non, odit libero vel quasi eaque ratione dignissimos?
+					</p>
+					<p>
+						3. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, assumenda quod pariatur
+						enim corrupti fugiat reprehenderit hic aut. Ea itaque veniam perspiciatis non, odit libero vel
+						quasi eaque ratione dignissimos?
+					</p>
+					<p>
+						4. Quaerat, assumenda quod pariatur enim corrupti fugiat reprehenderit hic aut. Ea itaque veniam
+						perspiciatis non, odit libero vel quasi eaque ratione dignissimos?
+					</p>
+				</div>
+
+				<!--=== nth-child(even) ===============================================================-->
+				<h2 class="subtitle"><span class="color-red">nth-child(even)</span> каждый чётный элемент родителя.</h2>
+				<div class="text-nthchild-even">
+					<p>
+						1. Quaerat, assumenda quod pariatur enim corrupti fugiat reprehenderit hic aut. Ea itaque veniam
+						perspiciatis non, odit libero vel quasi eaque ratione dignissimos?
+					</p>
+					<p>
+						2. Quaerat, assumenda quod pariatur enim corrupti fugiat reprehenderit hic aut. Ea itaque veniam
+						perspiciatis non, odit libero vel quasi eaque ratione dignissimos?
+					</p>
+					<p>
+						3. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, assumenda quod pariatur
+						enim corrupti fugiat reprehenderit hic aut. Ea itaque veniam perspiciatis non, odit libero vel
+						quasi eaque ratione dignissimos?
+					</p>
+					<p>
+						4. Quaerat, assumenda quod pariatur enim corrupti fugiat reprehenderit hic aut. Ea itaque veniam
+						perspiciatis non, odit libero vel quasi eaque ratione dignissimos?
+					</p>
+				</div>
+
+				<!--=== p:not(:last-child) ===============================================================-->
+				<h2 class="subtitle"><span class="color-red">p:not(:last-child)</span> второй способ убрать нижний
+					отступ с последнего элемента.</h2>
+				<div class="not">
+					<p>
+						1. Quaerat, assumenda quod pariatur enim corrupti fugiat reprehenderit hic aut. Ea itaque veniam
+						perspiciatis non, odit libero vel quasi eaque ratione dignissimos?
+					</p>
+					<p>
+						2. Quaerat, assumenda quod pariatur enim corrupti fugiat reprehenderit hic aut. Ea itaque veniam
+						perspiciatis non, odit libero vel quasi eaque ratione dignissimos?
+					</p>
+					<p>
+						3. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, assumenda quod pariatur
+						enim corrupti fugiat reprehenderit hic aut. Ea itaque veniam perspiciatis non, odit libero vel
+						quasi eaque ratione dignissimos?
+					</p>
+					<p>
+						4. Quaerat, assumenda quod pariatur enim corrupti fugiat reprehenderit hic aut. Ea itaque veniam
+						perspiciatis non, odit libero vel quasi eaque ratione dignissimos?
+					</p>
+				</div>
+
+
+				<!--==================== ПСЕВДО-ЭЛЕМЕНТЫ ===================================-->
+				<section class="pseudoelement">
+					<h2 class="title pseudoelement__title">Псевдоэлементы</h2>
+					<p class="pseudoelement">
+						Псевдоэлемент CSS3, применяется для отображения желаемого контента до или после элемента, к
+						которому он добавляется.
+					</p>
+
+					<!--===== first-line ======================================================-->
+					<div class="firstline">
+						<h3 class="firstline__subtitle">
+							<span class="fz__subtitle">first-line</span> задаёт стиль первой строки форматированного
+							текста.
+						</h3>
+						<p class="firstline__text">
+							Lorem ipsum dolor sit, amet consectetur adipisicing elit. In impedit eius at omnis
+							aspernatur nostrum! Ducimus laborum voluptate sed at! Ducimus nisi minima delectus corrupti
+							voluptatibus ipsum animi, vel provident!
+							Lorem ipsum dolor sit, amet consectetur adipisicing elit. In impedit eius at omnis
+							aspernatur nostrum!
+						</p>
+
+						<!--==== first-letter =====================================================-->
+						<h3 class="firstline__subtitle">
+							<span class="fz__subtitle">first-letter</span> определяет стиль первого символа в тексте элемента, к которому добавляется. <br />К этому псевдоэлементу могут применяться только стилевые свойства, связанные со свойствами шрифта, полями, отступами, границами, цветом и фоном.
+						</h3>
+						<p class="firstletter__text">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, laboriosam. Illo id necessitatibus cum fugit veniam commodi eaque, recusandae blanditiis sapiente consectetur quod repellat, itaque mollitia ea eveniet esse quisquam.
+						</p>
+						<p class="firstletter__text">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, laboriosam. Illo id necessitatibus cum fugit veniam commodi eaque, recusandae blanditiis sapiente consectetur quod repellat, itaque mollitia ea eveniet esse quisquam.
+						</p>
+					</div>
+
+					<!--==== before ======================================================-->
+					<div class="before">
+						<h2 class="before__title">Заголовок</h2>	
+						<h3 class="before__subtitle">
+							<span class="color-red">::before</span> применяется для отображения желаемого контента до содержимого элемента, к которому он добавляется. Работает совместно со свойством <span class="color-red">content</span>.
+						</h3>
+						<!-- <p class="before__text">
+							Lorem ipsum dolor sit amet lorem ipsum dolor sit amet.
+						</p> -->
+					</div>
+				</section>
+
+				<div class="block__list">
+					<ul class="list">
+						<li>Я пункт списка</li>
+						<li>Я пункт списка</li>
+						<li>Я пункт списка</li>
+						<li>Я пункт списка</li>
+						<li>Я пункт списка</li>
+					</ul>
+				</div>
+
+				<div class="block__list2">
+					<ul class="list-2">
+						<li>Я пункт списка </li>
+						<li>Я пункт списка</li>
+						<li>Я пункт списка</li>
+						<li>Я пункт списка</li>
+						<li>Я пункт списка</li>
+					</ul>
+				</div>
+
+				<div class="block__list3">
+					<ul class="list-3">
+						<li>Я пункт списка </li>
+						<li>Я пункт списка</li>
+						<li>Я пункт списка</li>
+						<li>Я пункт списка</li>
+						<li>Я пункт списка</li>
+					</ul>
+				</div>
+
+				<div class="block__list4">
+					<ul class="list-4">
+						<li>Я пункт списка </li>
+						<li>Я пункт списка</li>
+						<li>Я пункт списка</li>
+						<li>Я пункт списка</li>
+						<li>Я пункт списка</li>
+					</ul>
+				</div>
+
+				<div class="block__num-list">
+					<ol class="num-list">
+						<li>Я пункт списка</li>
+						<li>Я пункт списка</li>
+						<li>Я пункт списка</li>
+						<li>Я пункт списка</li>
+						<li>Я пункт списка</li>
+					</ol>
+				</div>
+
+				<!--============= домашка =========================================================-->
+				<section class="body__info">
+					<h2 class="body__info-title">Домашняя работа</h2>
+					<div class="body__container">
+						<header class="header">
+							<h3 class="header__subtile">OUR PROMISE TO YOU</h3>
+						</header>
+						<h3 class="header__title">Sed perspiciatis omnis iste natus</h3>
+						
+						<div class="items">
+								<div class="content__item">
+									<div class="content__title">24/7 Love & Care</div>
+									<div class="content__text">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium corrupti quos dolores et quas.</div>
+								</div>
+
+								<div class="content__item-2">
+									<div class="content__title">On-site Veterinarian</div>
+									<div class="content__text">Dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt.</div>
+								</div>
+
+								<div class="content__item-3">
+									<div class="content__title">On-site Veterinarian</div>
+									<div class="content__text">Dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt.</div>
+								</div>
+							</div>
+				  </div>
+				</section>
+
+				<!--================== домашка 2 ===========================================================-->
+				<section class="choose">
+					<h2 class="choose__title">Choose how often</h2>
+					<p class="choose__text">Our team of chefs do the prep work - no more chopping, measuring, or sink full of dishes!</p>
+				</section>
+			</main>
+			<footer class="footer">
+				<h2 class="footer__title">Курс фрилансер по жизни</h2>
+			</footer>
+		</div>
+	</div>
+</body>
+
+</html>
